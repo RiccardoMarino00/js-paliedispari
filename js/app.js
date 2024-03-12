@@ -7,7 +7,7 @@ const lastIndex = wordUser.length -1;
 const firstElement = wordUser[0];
 // const lastElement = wordUser[lastIndex];
 // Creo un ciclo for che mi stampi la parola inserita dall'utente ma al contrario
-for (let index = lastIndex; index >= firstElement; index--){
+for (let index = lastIndex; index >= 0; index--){
     console.log(index)
    
 }
