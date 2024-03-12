@@ -22,13 +22,15 @@ function evenOrOdd (sum){
 }
 const result = evenOrOdd(sum);
 console.log(result)
+
+
 // Dichiariamo chi ha vinto
   // SE utente ha scelto pari e la somma dei due numeri pari  OR utente ha scelto dispari e la somma dei numeri è dispari, ha vinto l'utente
     // SE userChoiceEvenOrOdd === true OR userChoiceEvenOrOdd === false 
     if (userChoiceEvenOrOdd === true || userChoiceEvenOrOdd === false){
         // Utente vince
-        console.log("L'utente vince")
+        console.log("L'utente vince!")
     // ALTRIMENTI ha vinto il computer
     } else {
-        console.log("Il computer vince")
+        console.log("Il computer vince!")
     }
