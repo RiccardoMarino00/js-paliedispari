@@ -6,21 +6,21 @@ const lastIndex = wordUser.length -1; // 4
 // Primo elemento
 const firstElement = wordUser[0]; // p
 
-
+let invertedText = "";
 // Creo un ciclo for che mi stampi la parola inserita dall'utente ma al contrario
 for (let index = lastIndex; index >= 0; index--){
     const reverseWord = wordUser[index];
+    invertedText += reverseWord
     console.log(reverseWord);
    
 }
 
 const result = wordPalindrome(wordUser);
 console.log(result)
-
 // Creo una funzione per capire se la parola inserita è palindroma (cioè se la parola inserita dall'utente anche se letta al contrario è uguale)
 function wordPalindrome (wordUser){
     // La funzione deve ritornare true se la parola è palindroma
-    if (wordUser === reverseWord){
+    if (wordUser === invertedText){
         return true
     // Dev ritornare false se la parola non è palindroma
     } else {

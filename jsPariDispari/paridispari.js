@@ -11,9 +11,9 @@ const sum = userNumberChoice + randomNumber;
 console.log("la somma fa " + sum)
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-function evenOrOdd (sum){
-    const rest = sum % 2;
-    if (rest === 0){
+function evenOrOdd (num){
+
+    if (num % 2 === 0){
         return true
     } else {
         return false
@@ -26,11 +26,15 @@ console.log(result)
 
 // Dichiariamo chi ha vinto
   // SE utente ha scelto pari e la somma dei due numeri pari  OR utente ha scelto dispari e la somma dei numeri è dispari, ha vinto l'utente
-    // SE userChoiceEvenOrOdd === true OR userChoiceEvenOrOdd === false 
-    if (userChoiceEvenOrOdd === true || userChoiceEvenOrOdd === false){
+    // SE userChoiceEvenOrOdd === pari AND la somma è pari 
+    if (userChoiceEvenOrOdd === "pari" && evenOrOdd(sum)){
         // Utente vince
         console.log("L'utente vince!")
-    // ALTRIMENTI ha vinto il computer
+    // INVECE SE userchoice === dispari          AND  la somma è dispari
+    } else if (userChoiceEvenOrOdd === "dispari" && !evenOrOdd(sum)) {
+        // Utente vince
+        console.log("L'utente vince!")
+        // ALTRIMENTI vince il pc
     } else {
-        console.log("Il computer vince!")
+        console.log("Il computer vince")
     }
